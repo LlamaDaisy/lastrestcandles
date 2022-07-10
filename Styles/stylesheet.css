@@ -1,0 +1,133 @@
+body {
+    background-color: whitesmoke;
+}
+
+.notification-bar {
+background-color: #333;
+overflow: hidden;
+border: solid black 5px;
+}
+
+.notification-bar_message {
+    color: white;
+    text-align: center;
+    font-family: 'Evil Dead', sans-serif;
+    font-size: 15px;
+}
+
+.logo {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+    border: solid black 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 100px;
+    font-size: 25px;
+}
+
+.topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.skulls {
+  margin-bottom: -4px;
+  border-left: solid black 5px;
+  border-right: solid black 5px;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  width: 99.6%;
+}
+
+.headerimage {
+position: absolute;
+top: 77.3%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+text-align: center;
+font-size: 30px;
+border: solid 15px;
+background-color:rgb(96, 96, 96,0.8);
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.cryptidfont {
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.summer {
+    font-family: 'Evil Dead', sans-serif;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    font-family: 'Amatic SC', cursive;
+}
+
+.border {
+    background-color: #333;
+    border: solid black 5px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 100px;
+    
+}
+
+.candles {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   padding: 20px 20px;
+}
+
+.phototext {
+  text-align: center;
+   font-family: 'Amatic SC', cursive;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-bottom: -7px;
+
+}
+
+.imageborder {
+    border: solid rgb(96, 96, 96) 10px;
+}
