@@ -1,65 +1,44 @@
-let tvShow = "Friends"
 
-let characters = 6;
+let itemCount = document.getElementById("itemCount")
 
-console.log(tvShow)
-console.log(characters)
+function handleCart() {
+  alert ("You added " + itemCount.value + " to cart!")
+}
 
-
-characters = 8;
-
-console.log(characters);
-
-let ratings = "2.5"
-console.log(ratings);
-
-const hasShowFinished = true
-console.log(hasShowFinished)
-
-var myName = "Lara"
-var comment = `My name is ${myName} and I'm Learning JavaScript`
-console.log(comment)
-
-//let isBoxBlue = true;
-//if(isBoxBlue == false) {
-  //  alert("Box is not blue!");
-//} else {
-  //  alert("Box is blue!!!")
-// }
-
-//let AverageAge = 90;
-
-//if(AverageAge < 18) {
-  //  alert("Wow, they are kids!");
-//} else if(AverageAge > 18 && AverageAge < 70) {
-  //  alert("Wow they are adults");
-//} else {
-  //  alert("Wow they are super olds");
-//}
-
-//var partyAnswer = prompt("Would you like to come to the party?");
-
-//if(partyAnswer == 'yes')
-
-//{
-//    alert("We will see you there");
-//}
-
-//else if(partyAnswer == 'no')
-
-//{
- //   alert("Too bad!!!");
-//} else {
- //   alert("I wasn't expecting that!")
-//}
-
-let Fruit = ['Apple', 'Orange', 'Banana'];
-console.log(Fruit)
-
-let countries = ['England', 'France', 'Italy']
-console.log (countries)
-
-countries.push ('USA')
-console.log(countries)
-countries.splice('3')
-console.log(countries)
+var subjectObject = {
+  "Pillar": {
+    "Red/Black": ["Orchid", "Licorice", "Rose", "Black Pepper"],
+    "Grey": ["Smoke", "Honey", "Vanilla", "Frosted Pine"],
+    "Earth Tones": ["Lavender", "Old Books", "Cedar", "Pine"]
+  },
+  "Container": {
+    "Swirl": ["Forrests", "Late Nights", "Midnight"],
+    "Solid": ["Vanilla", "Lavender", "Cedar"]
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}

@@ -25,7 +25,7 @@ border: solid black 5px;
 
 .title {
     width: 70rem;
-    height: 10rem;
+    height: 8rem;
     margin-left: auto;
     margin-right: auto;
     
@@ -109,22 +109,6 @@ li {
   width: 100%;
 }
 
-@media (min-width:1920px) {
-    .headerimage {
-    position: absolute;
-    top: 51.5%;
-    left: 54.3%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    border: solid 10px;
-    background-color:rgb(96, 96, 96,0.8);
-    padding-left: 12px;
-    padding-right: 12px;
-    }
-}
-
 .headerimage {
     position: absolute;
     top: 67%;
@@ -194,3 +178,116 @@ li {
    font-family: 'Amatic SC', cursive;
    font-size: 30px;
 }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 20px;
+}
+ .shopproduct {
+   font-family: 'Amatic SC', cursive;
+   font-size: 80px;
+   margin: 0%;
+   margin-bottom: 0%;
+ }
+
+ .candledes {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    width: 450px;
+ }
+
+.shopping {
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.fill {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: rgb(96, 96, 96);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  .numberbox {
+    height: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border: solid #333 1px;
+
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(96, 96, 96);
+   
+}
+  
+  .container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+  }
+
+  .contacttitle {
+   font-family: 'Amatic SC', cursive;
+   font-size: 80px;
+   margin: 0%;
+   margin-bottom: 0%;
+   text-align: center;
+  }
+
+  .request {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px 
+  }
